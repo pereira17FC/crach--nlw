@@ -1,0 +1,173 @@
+@keyframes animacao{
+    from{transform: translatey(2rem) rotate(0deg);}
+    to{transform: translatey(2rem) rotate(360deg);}
+    
+}
+
+
+* {
+    margin: 0;
+}
+
+html, body{
+    --black: hsl(0, 0%, 0%);
+
+    --gray: hsl(240, 9%, 89%); 
+    
+
+    height: 100%;
+    font-family: 'roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+body{
+    display: grid;
+    place-items: center;
+
+}
+main{
+    background: url(images/Mobile\ \(1\).svg) no-repeat center/cover;
+    width: 100vw;
+    min-height: 812px;
+    height: 100vh;
+}
+.container {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: var(--gray)
+    
+
+}
+.avatar {
+    width: 10rem;
+    margin: 11.5rem auto 0;
+    position: relative;
+
+}
+.avatar > span {
+        position: absolute;
+        top: -80px;
+        left: 8rem;
+        z-index: 1; /*move a camada*/
+        animation-name: animacao; 
+        animation: animacao infinite 24s linear;
+
+    }
+.avatar > img {
+    margin-top: -1px;
+    width: 15rem;
+    margin: -38px;
+     object-fit:cover;
+    clip-path: polygon(
+        50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%
+    );
+
+}    
+
+
+h1 {
+    color: var(--gray);
+  font-size: 1.9rem;
+  
+  margin-top: 3rem;
+}
+.container > span { 
+    position: relative;
+
+    left: -60px;
+    top: 25px;
+}
+
+
+a{
+    color: rgb(249, 249, 250);
+    text-decoration: none;
+    margin-top: 0.25rem;
+
+    display: flex;
+    gap: 0.75rem;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+p {
+    margin-top: 2rem;
+}
+
+ul {
+    margin-top: 4rem;
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    gap: 0.5rem;
+
+    justify-content: center;
+    
+}
+
+#youtube {
+    filter:grayscale(100%);
+    -webkit-filter: grayscale(80%);
+    transition: 2s;
+}
+
+#instagram {
+    filter:grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: 2s;
+}
+
+#twitter {
+    filter:grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: 2s;
+}
+
+#facebook {
+    filter:grayscale(100%);
+    -webkit-filter: grayscale(90%);
+    transition: 2s;
+}
+
+#youtube:hover {
+    filter:none;
+    -webkit-filter: none; 
+    border-radius: 50%;
+    transition-timing-function: cubic-bezier(-0,43,56,7);
+    transition-duration: 0.5s;
+    box-shadow: inset
+
+}
+
+
+#instagram:hover {
+    filter:none;
+    -webkit-filter: none; 
+    border-radius: 50%;
+    transition-timing-function: cubic-bezier(-0,43,56,7);
+    transition-duration: 0.5s;
+    box-shadow: inset
+}
+
+#twitter:hover {
+    filter:none;
+    -webkit-filter: none; 
+    border-radius: 50%;
+    transition-timing-function: cubic-bezier(-0,43,56,7);
+    transition-duration: 0.5s;
+    box-shadow: inset
+}
+
+#facebook:hover {
+    filter:none;
+    -webkit-filter: none; 
+    border-radius: 50%;
+    transition-timing-function: cubic-bezier(-0,43,56,7);
+    transition-duration: 0.5s;
+    box-shadow: inset
+}
+
